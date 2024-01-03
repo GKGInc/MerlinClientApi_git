@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALlSMQHENMkepkX6jcLVCRwAAAAACAAAAAAAQZgAAAAEAACAAAADKoV6EVDYXXCwdl1Acd7jEHEWmbVWId7K4k/qrEBUSEwAAAAAOgAAAAAIAACAAAAB/tj48T/OoFQJFLHbQEHSXw0TvW6xJBhLBZRkWGTvgPCAAAADwZv/ZAGuoXxjM+oRGyBzcn5Pg6sx8x/FrwMbcgZDhjUAAAAC1RPhoy1HhG3OmOpEO9ZJboHtBDIKjliULhDDBXGYaWDSUhipD+oPAphaEmQY6JlsZAhCzyzmVNS55wL5YX52s</EncryptedPassword>
+    <_PublishTargetUrl>ftp://gkgiis/MemexApiRelay</_PublishTargetUrl>
+    <History>True|2023-12-01T14:59:19.7268975Z;True|2023-11-29T17:14:05.4531596-05:00;True|2023-11-27T18:12:04.8958555-05:00;True|2023-11-27T14:10:47.7213519-05:00;True|2023-11-27T09:57:20.5317576-05:00;True|2023-11-21T13:32:16.3770327-05:00;True|2023-11-20T11:03:19.6611406-05:00;True|2023-11-20T09:49:18.4401615-05:00;True|2023-11-17T10:32:13.0147706-05:00;True|2023-11-16T16:28:45.2746127-05:00;True|2023-11-16T16:18:13.3247862-05:00;True|2023-11-16T16:07:08.1938465-05:00;True|2023-11-16T15:58:20.6846578-05:00;True|2023-11-16T15:38:26.7848968-05:00;True|2023-11-16T13:09:26.5977160-05:00;True|2023-11-16T11:47:30.3517132-05:00;True|2023-11-16T09:54:59.9500904-05:00;True|2023-11-14T15:39:07.0581929-05:00;True|2023-11-14T09:30:04.9294594-05:00;True|2023-11-13T18:02:38.5887930-05:00;True|2023-11-13T15:14:59.7137081-05:00;True|2023-11-07T10:35:19.1151621-05:00;True|2023-11-06T10:15:37.7180072-05:00;True|2023-10-31T16:46:38.2816531-04:00;True|2023-10-17T18:05:04.1690391-04:00;True|2023-10-17T09:41:33.2472194-04:00;True|2023-10-05T09:43:49.5511901-04:00;True|2023-10-04T14:12:11.4430446-04:00;True|2023-10-04T14:01:38.8874554-04:00;True|2023-10-04T13:42:08.5637263-04:00;True|2023-10-04T10:37:42.9498060-04:00;True|2023-10-04T10:22:45.1917297-04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>10/03/2023 17:04:10</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>10/04/2023 14:00:09</publishTime>
+    </File>
+    <File Include="cs/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="de/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="DevExpress.Data.v23.1.dll">
+      <publishTime>08/26/2023 23:00:00</publishTime>
+    </File>
+    <File Include="DevExpress.Xpo.v23.1.dll">
+      <publishTime>08/26/2023 23:00:00</publishTime>
+    </File>
+    <File Include="es/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="fr/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="it/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="ja/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="ko/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="Memex.Merlin.Client.dll">
+      <publishTime>09/27/2023 00:14:40</publishTime>
+    </File>
+    <File Include="Merlin.Mes.Engine.dll">
+      <publishTime>09/27/2023 00:14:40</publishTime>
+    </File>
+    <File Include="Merlin.Mes.Model.dll">
+      <publishTime>09/27/2023 00:14:38</publishTime>
+    </File>
+    <File Include="Merlin.Platform.Common.dll">
+      <publishTime>09/27/2023 00:14:36</publishTime>
+    </File>
+    <File Include="Merlin.Platform.Common.Interface.dll">
+      <publishTime>09/27/2023 00:14:36</publishTime>
+    </File>
+    <File Include="Merlin.Platform.ErpLaborTicket.Engine.dll">
+      <publishTime>09/27/2023 00:14:40</publishTime>
+    </File>
+    <File Include="Merlin.Platform.Serialization.dll">
+      <publishTime>09/27/2023 00:14:38</publishTime>
+    </File>
+    <File Include="Merlin.Platform.Standard.Data.dll">
+      <publishTime>09/27/2023 00:14:38</publishTime>
+    </File>
+    <File Include="MerlinClientApi.deps.json">
+      <publishTime>12/01/2023 09:59:08</publishTime>
+    </File>
+    <File Include="MerlinClientApi.dll">
+      <publishTime>12/01/2023 09:59:04</publishTime>
+    </File>
+    <File Include="MerlinClientApi.exe">
+      <publishTime>12/01/2023 09:59:04</publishTime>
+    </File>
+    <File Include="MerlinClientApi.pdb">
+      <publishTime>12/01/2023 09:59:04</publishTime>
+    </File>
+    <File Include="MerlinClientApi.runtimeconfig.json">
+      <publishTime>11/27/2023 10:08:55</publishTime>
+    </File>
+    <File Include="MerlinClientApi.Views.dll">
+      <publishTime>12/01/2023 09:59:07</publishTime>
+    </File>
+    <File Include="MerlinClientApi.Views.pdb">
+      <publishTime>12/01/2023 09:59:07</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>10/18/2022 12:14:58</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>10/18/2022 12:19:46</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Binder.dll">
+      <publishTime>10/18/2022 12:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.dll">
+      <publishTime>10/18/2022 12:30:14</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.EnvironmentVariables.dll">
+      <publishTime>10/18/2022 12:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.FileExtensions.dll">
+      <publishTime>10/18/2022 12:31:48</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Json.dll">
+      <publishTime>10/18/2022 12:32:32</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>10/18/2022 12:20:58</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>10/18/2022 12:21:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Abstractions.dll">
+      <publishTime>10/18/2022 12:19:58</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Physical.dll">
+      <publishTime>10/18/2022 12:31:38</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileSystemGlobbing.dll">
+      <publishTime>10/18/2022 12:31:24</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Http.Polly.dll">
+      <publishTime>05/16/2018 16:18:00</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>10/18/2022 12:21:24</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Configuration.dll">
+      <publishTime>10/18/2022 12:31:42</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Console.dll">
+      <publishTime>10/18/2022 12:32:32</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Debug.dll">
+      <publishTime>10/18/2022 12:31:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.dll">
+      <publishTime>10/18/2022 12:28:58</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.ObjectPool.dll">
+      <publishTime>08/24/2021 13:59:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.ConfigurationExtensions.dll">
+      <publishTime>10/18/2022 12:31:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.dll">
+      <publishTime>01/19/2023 19:01:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Primitives.dll">
+      <publishTime>10/18/2022 12:19:18</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.Bson.dll">
+      <publishTime>03/22/2017 07:01:20</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/20/2017 16:03:18</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.Schema.dll">
+      <publishTime>07/05/2016 16:33:14</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>10/10/2023 17:25:37</publishTime>
+    </File>
+    <File Include="NLog.dll">
+      <publishTime>09/06/2023 14:34:18</publishTime>
+    </File>
+    <File Include="NLog.Extensions.Logging.dll">
+      <publishTime>09/06/2023 15:18:30</publishTime>
+    </File>
+    <File Include="NLog.Web.AspNetCore.dll">
+      <publishTime>09/06/2023 15:48:18</publishTime>
+    </File>
+    <File Include="NodaTime.dll">
+      <publishTime>05/22/2020 02:39:36</publishTime>
+    </File>
+    <File Include="NodaTime.Serialization.JsonNet.dll">
+      <publishTime>03/31/2017 05:10:38</publishTime>
+    </File>
+    <File Include="pl/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="Polly.dll">
+      <publishTime>05/06/2018 13:38:56</publishTime>
+    </File>
+    <File Include="Polly.Extensions.Http.dll">
+      <publishTime>05/06/2018 13:57:30</publishTime>
+    </File>
+    <File Include="pt-BR/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="ru/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>10/17/2022 19:26:02</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll">
+      <publishTime>10/19/2020 14:46:26</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>01/19/2021 19:16:48</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/sni.dll">
+      <publishTime>07/12/2017 07:24:24</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/sni.dll">
+      <publishTime>07/12/2017 07:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/sni.dll">
+      <publishTime>07/12/2017 07:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>10/17/2022 19:26:08</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll">
+      <publishTime>10/19/2020 14:46:14</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>01/19/2021 19:15:32</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll">
+      <publishTime>10/19/2020 14:46:52</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll">
+      <publishTime>05/19/2023 16:53:56</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll">
+      <publishTime>10/22/2021 19:45:48</publishTime>
+    </File>
+    <File Include="System.Data.SqlClient.dll">
+      <publishTime>10/17/2022 19:16:04</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>10/18/2022 12:21:04</publishTime>
+    </File>
+    <File Include="System.Formats.Asn1.dll">
+      <publishTime>10/22/2021 19:41:58</publishTime>
+    </File>
+    <File Include="System.Net.Http.Formatting.dll">
+      <publishTime>02/01/2018 07:17:18</publishTime>
+    </File>
+    <File Include="System.Private.ServiceModel.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="System.Reflection.DispatchProxy.dll">
+      <publishTime>04/14/2020 18:48:08</publishTime>
+    </File>
+    <File Include="System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>10/22/2021 19:40:56</publishTime>
+    </File>
+    <File Include="System.Security.AccessControl.dll">
+      <publishTime>10/22/2021 19:36:58</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.Cng.dll">
+      <publishTime>10/19/2020 14:47:30</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.Pkcs.dll">
+      <publishTime>05/19/2023 16:53:34</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.Xml.dll">
+      <publishTime>07/13/2022 13:47:02</publishTime>
+    </File>
+    <File Include="System.Security.Principal.Windows.dll">
+      <publishTime>10/19/2020 14:37:20</publishTime>
+    </File>
+    <File Include="System.ServiceModel.dll">
+      <publishTime>03/23/2023 01:18:26</publishTime>
+    </File>
+    <File Include="System.ServiceModel.Http.dll">
+      <publishTime>03/23/2023 01:18:28</publishTime>
+    </File>
+    <File Include="System.ServiceModel.NetTcp.dll">
+      <publishTime>07/19/2018 14:24:18</publishTime>
+    </File>
+    <File Include="System.ServiceModel.Primitives.dll">
+      <publishTime>03/23/2023 01:18:40</publishTime>
+    </File>
+    <File Include="System.ServiceModel.Security.dll">
+      <publishTime>07/19/2018 14:24:20</publishTime>
+    </File>
+    <File Include="System.Text.Encodings.Web.dll">
+      <publishTime>10/18/2022 12:31:50</publishTime>
+    </File>
+    <File Include="System.Text.Json.dll">
+      <publishTime>10/18/2022 12:32:24</publishTime>
+    </File>
+    <File Include="tr/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>12/01/2023 09:59:10</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>10/03/2023 17:04:11</publishTime>
+    </File>
+    <File Include="zh-Hans/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+    <File Include="zh-Hant/System.Private.ServiceModel.resources.dll">
+      <publishTime>03/23/2023 01:18:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

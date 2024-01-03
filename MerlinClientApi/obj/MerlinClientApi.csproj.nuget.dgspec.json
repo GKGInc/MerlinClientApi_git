@@ -1,0 +1,175 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\MerlinClientApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\MerlinClientApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\MerlinClientApi.csproj",
+        "projectName": "MerlinClientApi",
+        "projectPath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\MerlinClientApi.csproj",
+        "packagesPath": "C:\\Users\\Helder\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Helder\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NAcoCN7PQgx1YIzK3adRfkK93UuWuLjmzARAD8P2WA3UNzagym/api": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "DevExpress.Data": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Xpo": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "Memex.Merlin.Client": {
+              "target": "Package",
+              "version": "[4.0.42.4497, )"
+            },
+            "Memex.Merlin.Mes.Engine": {
+              "target": "Package",
+              "version": "[4.0.42.4497, )"
+            },
+            "Memex.Merlin.Platform.Common": {
+              "target": "Package",
+              "version": "[4.0.42.4497, )"
+            },
+            "Memex.Merlin.Platform.Common.Interface": {
+              "target": "Package",
+              "version": "[4.0.42.4497, )"
+            },
+            "Memex.Merlin.Platform.ErpLaborTicket.Engine": {
+              "target": "Package",
+              "version": "[4.0.42.4497, )"
+            },
+            "Memex.Merlin.Platform.Serialization": {
+              "target": "Package",
+              "version": "[4.0.42.4497, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.4, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.3.4, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.4, )"
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

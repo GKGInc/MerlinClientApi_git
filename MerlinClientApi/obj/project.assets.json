@@ -7841,11 +7841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\MerlinClientApi.csproj",
+      "projectUniqueName": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi_git\\MerlinClientApi\\MerlinClientApi.csproj",
       "projectName": "MerlinClientApi",
-      "projectPath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\MerlinClientApi.csproj",
+      "projectPath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi_git\\MerlinClientApi\\MerlinClientApi.csproj",
       "packagesPath": "C:\\Users\\Helder\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\obj\\",
+      "outputPath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi_git\\MerlinClientApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",

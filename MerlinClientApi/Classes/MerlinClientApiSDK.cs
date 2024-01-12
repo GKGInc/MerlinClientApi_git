@@ -95,16 +95,9 @@ namespace MerlinClientApi.Classes
             string message = "";
             string errorMessage = "";
 
-            try
-            {
-                string path = "machineNo={0}|productName={1}|woName={2}|lineItemName={3}|cycleTime={4}";
-                string fullPath = string.Format(path, machineNo, productName, woName, lineItemName, cycleTime.ToString());
-                Log(LoggingType.Info, "CreateOpstep", fullPath);
-            }
-            catch (Exception ex)
-            {
-
-            }
+            string path = "machineNo={0}|productName={1}|woName={2}|lineItemName={3}|cycleTime={4}";
+            string fullPath = string.Format(path, machineNo, productName, woName, lineItemName, cycleTime.ToString());
+            Log(LoggingType.Info, "CreateOpstep", fullPath);
 
             //// --------------------------------------------------------------------------------------------- 
             //// Create an Opstep
@@ -307,10 +300,11 @@ namespace MerlinClientApi.Classes
                     _sono = woName.PadLeft(8, ' ');
                     int.TryParse(lineItemName, out _opno);
 
+                    string query = "UPDATE [JAM].[dbo].[DepartmentQueue] SET [in_memex] = 1 WHERE [sono] = '{0}' AND [opno] = {1} ";
+                    string fullQuery = string.Format(query, _sono, _opno);
+
                     try
                     {
-                        string query = "UPDATE [JAM].[dbo].[DepartmentQueue] SET [in_memex] = 1 WHERE [sono] = '{0}' AND [opno] = {1} ";
-                        string fullQuery = string.Format(query, _sono, _opno);
 
                         using (var uow = new UnitOfWork())
                         {
@@ -319,7 +313,7 @@ namespace MerlinClientApi.Classes
                     }
                     catch (Exception ex)
                     {
-                        LogError("CreateOpstep - Update in_memex", ex, ex.Message);
+                        LogError("CreateOpstep - Update in_memex: " + fullQuery, ex, ex.Message);
                     }
                 }          
 
@@ -342,7 +336,7 @@ namespace MerlinClientApi.Classes
             catch (Exception ex)
             {
                 errorMessage = ex.Message;
-                LogError("CreateOpstep", ex, ex.Message);
+                LogError("CreateOpstep " + fullPath, ex, ex.Message);
             }
             
             return workOrderExt;
@@ -375,7 +369,7 @@ namespace MerlinClientApi.Classes
                 // Note:    Jobstate and QueuedDate is required as valid values if there is an Opstep that is currently running on the Machine.
                 //          For the previous opstep, Jobstate must be Pending, Queued, or Completed.
 
-                //      Opstep exists?  |   JobState    |   QueuedDate  |   Comment
+                //      Opstep exists?  |   JobState    |   QueuedDate  |   CommentLoadWorkOrderIntoMachine - GetLatestOpStepChange/LogoutOpStep 
                 //      No              |                                   there isn't an opstep that is currently assigned to the machine.  JobState and Queued Date will be ignored.
                 //      Yes             |   Pending(0)  |   No          |   Current Opstep will be set to a Jobstate of PENDING.  QueuedDate does not need to be valid.  Set to current date and time.
                 //      Yes             |   Queued (1)  |   Yes         |   Current Opstep will be set to a Jobstate of QUEUED.  Asset will remaing the same.  Next run time for the Opstep will be set according to QueuedDate
@@ -413,7 +407,7 @@ namespace MerlinClientApi.Classes
                     //    await LogoutOpStep(machineId, jobState, queuedDate);
                     //}
 
-                    lastOpstep = await _client.GetLatestOpStepChange(machineAssetId);
+                    //lastOpstep = await _client.GetLatestOpStepChange(machineAssetId);
 
                     if (lastOpstep != null && lastOpstep.Id != Guid.Empty)
                     {
@@ -428,7 +422,7 @@ namespace MerlinClientApi.Classes
                 }
                 catch (Exception ex)
                 {
-                    LogError("LoadWorkOrderIntoMachine - GetLatestOpStepChange/LogoutOpStep", ex, ex.Message);
+                    LogError("LoadWorkOrderIntoMachine - GetLatestOpStepChange/LogoutOpStep. " + string.Format("wo={0}|opStep={1}|machineNo={2}|machineAssetId={3}|", wo, opStep.ToString(), machineNo.ToString(), machineAssetId.ToString()), ex, ex.Message);
                 }
 
                 // ---------------------------------------------------------------------------------------------
@@ -532,7 +526,7 @@ namespace MerlinClientApi.Classes
                 fullPath = string.Format(path, machineNo.ToString(), operatorUserId, login.ToString(), machineAssetId.ToString(), operatorAssetId.ToString());
 
                 Log(LoggingType.Warn, "LoginOperatorToMachine Error: " + ex.Message, fullPath);
-                LogError("LoginOperatorToMachine", ex, ex.Message, fullPath);
+                LogError("LoginOperatorToMachine " + fullPath, ex, ex.Message, fullPath);
             }
         }
 
@@ -639,7 +633,7 @@ namespace MerlinClientApi.Classes
                 string fullPath = string.Format(path, machineAssetId, sono, opno.ToString(), partCount.ToString(), reason_id);
 
                 Log(LoggingType.Warn, "SetCount Error: " + ex.Message, fullPath);
-                LogError("SetCount", ex, ex.Message, fullPath);
+                LogError("SetCount Error: " + fullPath, ex, ex.Message, fullPath);
                 return new HttpResponseMessage(System.Net.HttpStatusCode.BadRequest);
             }
         }

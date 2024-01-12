@@ -329,11 +329,11 @@ namespace MerlinClientApi.Controllers
                 _sono = createOpstep.WoName.PadLeft(8, ' ');
                 int.TryParse(createOpstep.LineItemName, out _opno);
 
+                string query = "UPDATE [JAM].[dbo].[DepartmentQueue] SET [in_memex] = 1 WHERE [sono] = '{0}' AND [opno] = {1} ";
+                string fullQuery = string.Format(query, _sono, _opno);
+
                 try
                 {
-                    string query = "UPDATE [JAM].[dbo].[DepartmentQueue] SET [in_memex] = 1 WHERE [sono] = '{0}' AND [opno] = {1} ";
-                    string fullQuery = string.Format(query, _sono, _opno);
-
                     using (var uow = new UnitOfWork())
                     {
                         uow.ExecuteQuery(fullQuery);
@@ -341,7 +341,7 @@ namespace MerlinClientApi.Controllers
                 }
                 catch (Exception ex)
                 {
-                    LogError("CheckAndCreateOpstep - Update in_memex", ex, ex.Message);
+                    LogError("CheckAndCreateOpstep - Update in_memex: " + fullQuery, ex, ex.Message);
                 }
             }
 
@@ -452,7 +452,7 @@ namespace MerlinClientApi.Controllers
 
                     if (opStepList is null)
                     {
-                        LogError("RelayProcess - ADD WORKORDER - GetOpStepsForWorkOrderAndLineItem", null, "Error Check if sono+opno in Memex");
+                        LogError("RelayProcess - ADD WORKORDER - GetOpStepsForWorkOrderAndLineItem: " + string.Format("machineNo={0}|sono={1}|opno={2}|productNo={3}|", machineNo, _sono, _opno.ToString()), null, "Error Check if sono+opno in Memex");
                         return new HttpResponseMessage(System.Net.HttpStatusCode.InternalServerError);
                     }
 
@@ -489,7 +489,7 @@ namespace MerlinClientApi.Controllers
                         }
                         catch (Exception ex)
                         {
-                            LogError("RelayProcess - ADD WORKORDER - Get CycleTime", ex, fullQuery);
+                            LogError("RelayProcess - ADD WORKORDER - Get CycleTime: " + fullQuery, ex, fullQuery);
                             return new HttpResponseMessage(System.Net.HttpStatusCode.BadRequest);
                         }
 
@@ -516,11 +516,11 @@ namespace MerlinClientApi.Controllers
                         _sono = woName.PadLeft(8, ' ');
                         int.TryParse(lineItemName, out _opno);
 
+                        string query = "UPDATE [JAM].[dbo].[DepartmentQueue] SET [in_memex] = 1 WHERE [sono] = '{0}' AND [opno] = {1} ";
+                        string fullQuery = string.Format(query, _sono, _opno);
+
                         try
                         {
-                            string query = "UPDATE [JAM].[dbo].[DepartmentQueue] SET [in_memex] = 1 WHERE [sono] = '{0}' AND [opno] = {1} ";
-                            string fullQuery = string.Format(query, _sono, _opno);
-
                             using (var uow = new UnitOfWork())
                             {
                                 uow.ExecuteQuery(fullQuery);
@@ -531,7 +531,7 @@ namespace MerlinClientApi.Controllers
                         }
                         catch (Exception ex)
                         {
-                            LogError("RelayProcess - ADD WORKORDER - Update in_memex", ex, ex.Message);
+                            LogError("RelayProcess - ADD WORKORDER - Update in_memex: " + fullQuery, ex, ex.Message);
                             return new HttpResponseMessage(System.Net.HttpStatusCode.BadRequest);
                         }
                     }
@@ -595,7 +595,7 @@ namespace MerlinClientApi.Controllers
                     }
                     catch (Exception ex)
                     {
-                        LogError("RelayProcess - START JOB", ex, ex.Message);
+                        LogError("RelayProcess - START JOB error: " + string.Format("LoadWorkOrderIntoMachine {0} {1} {2}", woName, _opno, _machineNo), ex, ex.Message);
                         return new HttpResponseMessage(System.Net.HttpStatusCode.InternalServerError);
                     }
                 //break;

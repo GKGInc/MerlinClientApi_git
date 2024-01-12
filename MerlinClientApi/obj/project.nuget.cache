@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C7I7ryORcLhyvt/p/5DX5bljdNDyyb7BLLbo7GkVHrYDdHiiPiWTbDhYLEv7l2jFuUfsOL+uTrNexL47DQKH+Q==",
+  "dgSpecHash": "uiOcqEt00xKAtZXcVWjw/NJaMkmdDQtSa9oTV3N14k1dzpo0QMCMdIvJ1dKoZuHUDQ9JnlbIfIPvZQDc7DwHxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi\\MerlinClientApi\\MerlinClientApi.csproj",
+  "projectFilePath": "C:\\Users\\Helder\\Documents\\Visual Studio 2015\\Projects\\Jade\\MerlinClientApi_git\\MerlinClientApi\\MerlinClientApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Helder\\.nuget\\packages\\devexpress.data\\23.1.5\\devexpress.data.23.1.5.nupkg.sha512",
     "C:\\Users\\Helder\\.nuget\\packages\\devexpress.xpo\\23.1.5\\devexpress.xpo.23.1.5.nupkg.sha512",
